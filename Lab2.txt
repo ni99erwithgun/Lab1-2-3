@@ -1,0 +1,22 @@
+User_defined.h:
+    int User_defined_print();
+User_defined.c:
+    #include<stdio.h>
+    #include<stdlib.h>
+    int User_defined_print()
+    {
+	    printf("Welcome to C\n");
+	    return 0;
+    }
+main.c:
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include "User_defined.h"
+
+    int main(void)
+    {
+	    User_defined_print();
+
+  	    system("pause");
+	    return 0;
+    }
